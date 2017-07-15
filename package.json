@@ -1,0 +1,29 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "temp": "^0.8.3",
+    "tmp": "0.0.31"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.2",
+    "eslint": "^4.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^3.0.0",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.7.0"
+  },
+  "scripts": {
+    "debug": "nodemon --inspect index",
+    "test": "tape tests/**/*.test.js | tap-diff",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC"
+}
