@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="Question">
+    <h2> Question </h2>{{q}} <br>
+    <form class="form" action="" method="post">
+      <ul>
+        {{#each a}}
+        <li><input name="answer" type="radio" value="{{this}}">{{this}}</li>
+        {{/each}}
+      </ul>
+      <input type="submit"/>
+    </form>
+  </div>
+</div>

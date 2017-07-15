@@ -1,0 +1,24 @@
+{
+  "trivias": [{
+      "id": 1,
+      "q": "What food is Hummus made from?",
+      "a": ["Chickpeas", "Pumpkin", "Potato", "Kumara"],
+      "result": "Chickpeas",
+      "img": "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/8/29/0/FNM_100111-Hummus-006_s4x3.jpg.rend.hgtvcom.616.462.jpeg"
+    },
+    {
+      "id": 2,
+      "q": "In which U.S. state would you find Mount Rushmore?",
+      "a": ["Nevada", "South Dakota", "North Carolina", "Ohio"],
+      "result": "South Dakota",
+      "img": "http://assets.fodors.com/destinations/477425/mount-rushmore-national-memorial-south-dakota-usa_main.jpg"
+    },
+    {
+      "id": 3,
+      "q": "What was Marilyn Monroe's name at birth?",
+      "a": ["Teresa Jane Matterson", "Norma Jeane Mortenson", "Mary Leanne Smith", "Abigail Ann Jones"],
+      "result": "Norma Jeane Mortenson",
+      "img": "https://atlassociety.org/images/marilyn-monroe-ayn-rand-admired.jpg"
+    }
+  ]
+}
