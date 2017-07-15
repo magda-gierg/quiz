@@ -21,7 +21,7 @@
   },
   "scripts": {
     "debug": "nodemon --inspect index",
-    "test": "tape tests/**/*.test.js | tap-diff",
+    "test": "tape tests/*.test.js | tap-diff",
     "start": "node index"
   },
   "author": "",
