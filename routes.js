@@ -8,26 +8,36 @@ router.get('/', function (req, res) {
 })
 
 router.get('/questions/:id', function (req, res) {
-  var id= req.params.id
-  var singleQuestion= data.trivias.find(function(question) {
+  var id = req.params.id
+  var singleQuestion = data.trivias.find(function(question) {
     return question.id == id
   })
   res.render('questions/question', singleQuestion)
 })
 
-router.post('/questions/:id', function (req, res){
-  var id= req.params.id
-  var answer= req.body.answer
-  var singleQuestion= data.trivias.find(function(question) {
-    return question.id == id
+router.get('/results', function(req, res) {
+  res.render('questions/results')
+})
+
+router.post('/questions/:id', function (req, res) {
+  var id = parseInt(req.params.id)
+  var answer = req.body.answer
+  var singleQuestion = data.trivias.find(function(question) {
+    return question.id == id + 1
   })
-  var result= singleQuestion.result
-  if(answer == result)
-  res.render('questions/correct')
-  else {
-    res.render('questions/wrong')
+
+  if (singleQuestion == undefined) { //no next object
+    res.redirect('/results')
+  } else {
+
+    res.redirect('/questions/' + (id+1))
   }
 })
+
+
+
+
+
 
 
 
